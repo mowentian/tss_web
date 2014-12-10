@@ -6,3 +6,6 @@ router.get '/', (req, res) ->
 
 router.get '/layout', (req, res) ->
   res.render 'layout', locals: title: 'Hello World!'
+
+router.get '/smith', (req, res) ->
+  res.render 'smith_index'
