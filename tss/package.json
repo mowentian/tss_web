@@ -1,0 +1,26 @@
+{
+    "name": "tss",
+    "version": "1.0.0",
+    "description": "a web site for tss",
+    "private": false,
+    "author": "Huang Panpan <mowencangtian@gmail.com> (http://github.com/mowentian)",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mowentian/tss_web"
+    },
+    "scripts": {
+        "start": "coffee app.coffee"
+    },
+    "dependencies": {
+        "coffee-script": "*",
+        "jade": "*",
+        "express": "*"
+    },
+    "engines": {
+        "node": "~0.10.x",
+        "npm": "1.2.x"
+    },
+    "contributors": [
+        "Huang Panpan <> (https://github.com/mowentian)"
+    ]
+}

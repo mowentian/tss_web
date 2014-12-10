@@ -1,0 +1,632 @@
+doctype html
+// saved from url=(0026)http://airandspace.si.edu/
+html.js.flexbox.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths(style="height: 100%;")
+  head
+    meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+    title Smithsonian"s National Air and Space Museum Home Page
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes")
+    link(rel="stylesheet", href="/style/bootstrap.css", media="screen")
+    link(rel="stylesheet", href="/style/extras.css", media="screen")
+    link(rel="stylesheet", href="/style/bootstrap-responsive.css", media="screen")
+    link(rel="stylesheet", href="/style/print.css", media="print")
+    link(rel="shortcut icon", href="/favicon.ico")
+    //if lt IE 9
+      link(rel="stylesheet", type="text/css", href="/style/ie7-and-down.css", media="screen")
+    meta(name="description", content="Official website of Smithsonian's National Air and Space Museum")
+    meta(property="og:description", content="Official website of Smithsonian's National Air and Space Museum")
+    meta(name="robots", content="index,follow")
+    script(src="/js/modernizr-1.7.min.js")
+    script(src="/js/jquery.js")
+    script(src="/js/bootstrap.js")
+    script(src="/js/jquery.easing.js")
+    script(src="/js/script.js")
+    script(src="/js/ui.js")
+    script(type='text/javascript').
+      $(document).bind("mobileinit", function(){ $.mobile.ajaxEnabled = false })
+    script(type='text/javascript').
+      $('.carousel').carousel({ interval: 6000 })
+  body(style="position: relative; min-height: 100%; top: 0px;")
+    header.jumbotron
+      .container
+        .row
+          .span7.logomargin.hidden-phone
+            a(href="/")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/nasm_logo2.png", alt="Smithsonian Air and Space Museum")
+          .span7.logomargin.visible-phone
+            a(href="./Smithsonian's National Air and Space Museum Home Page_files/Smithsonian's National Air and Space Museum Home Page.html")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/nasm_logo_mobile.png", 
+              alt="Smithsonian Air and Space Museum")
+          .span3.visible-desktop.btnmargin
+            a.btn.btn-small.btn-primary(style="margin-left:25px;", href="https://airandspace.si.edu/support/donate/")
+              span.white.bold DONATE
+            a.btn.btn-small.btn-primary(href="http://airandspace.si.edu/support/membership/")
+              span.white.bold MEMBERSHIP
+          .span3.visible-tablet.btnmargin
+            a.btn.btn-mini.btn-primary(href="https://airandspace.si.edu/support/donate/")
+              span.white.bold DONATE
+            a.btn.btn-mini.btn-primary(href="http://airandspace.si.edu/support/membership/")
+              span.white.bold MEMBERSHIP
+          .span2(style="margin-top:12px;")
+            .input-append.hidden-phone(style="margin-bottom:-20px;")
+              form(name="headersearch", method="post", action="http://airandspace.si.edu/search/")
+                input#appendedInputButton.input-small(type="text", name="sitesearch")
+                button.btn.btn-warning(type="submit")
+                  img(src="./Smithsonian's National Air and Space Museum Home Page_files/maglass.png", alt="Search")
+    // dropdown navigation responsive nav
+    #menu-links.primary-menu
+      #sitewidewrapper(style="z-index:8000;")
+        nav#dropList.container
+          ul#menu
+            li.level1-li.sub
+              a.level1-a.first(href="http://airandspace.si.edu/about")
+                | About
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col3
+                .listCol.right
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/about/facts.cfm") Facts and Figures
+                    li
+                      a(href="http://airandspace.si.edu/about/newsroom/") Newsroom
+                    li
+                      a(href="http://airandspace.si.edu/about/history/") History
+                    li
+                      a(href="http://airandspace.si.edu/about/governance/") Organization
+                    li
+                      a(href="http://airandspace.si.edu/about/contact.cfm") Contact
+                    li
+                      a.last(href="http://airandspace.si.edu/about/faq.cfm") FAQ
+                .listCol.left
+                  ul
+                    li(style="border-bottom:2px solid #999999;margin-left:5px;color:#000000;text-align:center;") OUR MISSION
+                  .extra
+                    | The National Air and Space Museum commemorates the history of flight and educates and inspires people through its collections, exhibitions, research, and programs related to aviation, space flight, and planetary studies.
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/visit")
+                | Visit
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col2
+                .listCol
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/visit/mall/") Museum in DC
+                    li
+                      a(href="http://airandspace.si.edu/visit/udvar-hazy-center") Udvar-Hazy Center
+                    li
+                      a(href="http://airandspace.si.edu/visit/educators.cfm") Educators
+                    li
+                      a(href="http://airandspace.si.edu/visit/families.cfm") Families
+                    li
+                      a.last(href="https://evansvol.si.edu/custom/505/client/") Group Reservations
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/events")
+                | Events
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col2
+                .listCol
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/events/calendar/") Calendar of Events
+                    li
+                      a(href="http://airandspace.si.edu/events/imax-planetarium/") IMAX + Planetarium
+                    li
+                      a(href="http://airandspace.si.edu/events/family-days/") Family Days
+                    li
+                      a(href="http://airandspace.si.edu/events/lectures/") Lectures
+                    li
+                      a(href="http://airandspace.si.edu/events/webcasts.cfm") Webcasts
+                    li
+                      a(href="http://airandspace.si.edu/events/seminars/") Workshops and Seminars
+                    li
+                      a(href="http://airandspace.si.edu/events/trophy/") Trophy Award
+                    li
+                      a.last(href="http://airandspace.si.edu/support/host-an-event/") Host an Event
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/exhibitions")
+                | Exhibitions
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col2
+                .listCol
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/exhibitions/on-view") On View
+                    li
+                      a(href="http://airandspace.si.edu/exhibitions/coming") Coming
+                    li
+                      a(href="http://airandspace.si.edu/exhibitions/online") Online
+                    li
+                      a.last(href="http://airandspace.si.edu/exhibitions/past") Past
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/collections")
+                | Collections
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col3
+                .listCol.right
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/collections/about.cfm") About the Collections
+                    li
+                      a(href="http://airandspace.si.edu/collections/objects.cfm") Objects
+                    li
+                      a(href="http://airandspace.si.edu/collections/archival/") Archival Collections
+                    li
+                      a(href="http://airandspace.si.edu/explore-and-learn/multimedia/") Multimedia Gallery
+                    li
+                      a(href="http://airandspace.si.edu/research/resources/rpif/") Earth &#38; Planetary
+                    li
+                      a.last(href="http://airandspace.si.edu/collections/preservation-restoration/") Preservation and Restoration
+                .listCol.left
+                  .extra
+                    img(src="./Smithsonian's National Air and Space Museum Home Page_files/collection_search.jpg", width="220", height="110")
+                    br
+                    br
+                    .input-append
+                      form.form-inline(action="http://airandspace.si.edu/collections/search/", method="get")
+                        input#appendedInputButton.input-medium(type="text", name="q")
+                        button.btn.btn-primary(type="submit")
+                          img(src="./Smithsonian's National Air and Space Museum Home Page_files/maglass.png", alt="Search")
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/research")
+                | Research
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col3
+                .listCol.right
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/research/projects/") Projects
+                    li
+                      a(href="http://airandspace.si.edu/research/aeronautics/") Aeronautics
+                    li
+                      a(href="http://airandspace.si.edu/research/earth-and-planetary/") Earth and Planetary
+                    li
+                      a(href="http://airandspace.si.edu/research/space-history/") Space History
+                    li
+                      a(href="http://airandspace.si.edu/research/publications/") Publications
+                    li
+                      a(href="http://airandspace.si.edu/research/fellowships/") Fellowships
+                    li
+                      a(href="http://airandspace.si.edu/research/internships/") Internships
+                    li
+                      a(href="http://airandspace.si.edu/research/resources/") Resources
+                    li
+                      a.last(href="http://airandspace.si.edu/research/staff.cfm") Staff
+                .listCol.left
+                  .listCol.right(style="padding-left:10px;")
+                    h3 RESEARCH RESOURCES:
+                  .extra
+                    .row
+                      .span1
+                        br
+                        a(href="http://airandspace.si.edu/research/resources/archives/")
+                          img(src="./Smithsonian's National Air and Space Museum Home Page_files/archives.jpg")
+                        br
+                        br
+                      .span2
+                        br
+                        a(href="http://airandspace.si.edu/research/resources/archives/") ARCHIVES
+                    .row
+                      .span1
+                        a(href="http://library.si.edu/libraries/air-and-space")
+                          img(src="./Smithsonian's National Air and Space Museum Home Page_files/library.jpg")
+                        br
+                        br
+                      .span2
+                        a(href="http://library.si.edu/libraries/air-and-space") LIBRARY
+                    .row
+                      .span1
+                        a(href="http://airandspace.si.edu/research/resources/rpif/")
+                          img(src="./Smithsonian's National Air and Space Museum Home Page_files/rpif.jpg")
+                        br
+                        br
+                      .span2
+                        a(href="http://airandspace.si.edu/research/resources/rpif/") REGIONAL PLANETARY IMAGE FACILITY
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/support")
+                | Support
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col2
+                .listCol
+                  ul
+                    li
+                      a(href="https://airandspace.si.edu/support/donate/") Donate
+                    li
+                      a(href="http://airandspace.si.edu/support/wall-of-honor/index.cfm") Wall of Honor
+                    li
+                      a(href="http://airandspace.si.edu/support/membership/") Membership
+                    li
+                      a(href="http://airandspace.si.edu/support/ways-to-give/") Ways to Give
+                    li
+                      a(href="http://airandspace.si.edu/support/volunteer/") Volunteer
+                    li
+                      a.last(href="http://airandspace.si.edu/support/corporate/index.cfm") Corporate Giving
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/explore-and-learn")
+                | Explore &#38; Learn
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col3.left1
+                .listCol.right
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/explore-and-learn/multimedia/") Multimedia Gallery
+                    li
+                      a(href="http://airandspace.si.edu/explore-and-learn/collection.cfm") The Collection
+                    li
+                      a(href="http://airandspace.si.edu/explore-and-learn/online.cfm") Events &#38; Activities
+                    li
+                      a(href="http://airandspace.si.edu/explore-and-learn/educator-resources/") Educator Resources
+                    li
+                      a(href="http://airandspace.si.edu/explore-and-learn/get-involved/") Get Involved
+                    li
+                      a.last(href="http://airandspace.si.edu/explore-and-learn/topics/") Popular Topics
+                .listCol.left
+                  .extra
+                    a(href="http://airandspace.si.edu/explore-and-learn/topics/wright-brothers.cfm")
+                      img(src="./Smithsonian's National Air and Space Museum Home Page_files/wright-brothers.jpg")
+                    br
+                    br
+                    h4 HIGHLIGHTED TOPIC:
+                    a(href="http://airandspace.si.edu/explore-and-learn/topics/wright-brothers.cfm") THE WRIGHT BROTHERS
+                  .clear
+                  .listCol.right(style="padding-left:10px;")
+                    a(href="http://airandspace.si.edu/explore-and-learn/topics/") More Topics &#62;&#62;
+                    br
+                    br
+              //if lte IE 6
+            li.level1-li.sub
+              a.level1-a(href="http://airandspace.si.edu/connect")
+                | Connect
+                // [if gte IE 7] <!
+              // <![endif]
+              //if lte IE 6
+                table
+                  tr
+                    td
+              .listHolder.col3.left1
+                .listCol.right
+                  ul
+                    li
+                      a(href="http://airandspace.si.edu/connect/socials/") Socials
+                    li
+                      a(href="http://blog.nasm.si.edu/") Blog
+                    li
+                      a.last(href="http://airandspace.si.edu/about/newsroom/e-newsletter.cfm") E-Newsletter
+                .listCol.left
+                  .extra
+                    a(href="https://www.facebook.com/airandspace")
+                      img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_fb.gif", alt="Facebook")
+                    a(href="https://twitter.com/airandspace")
+                      img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_tw.gif", alt="Twitter")
+                    a(href="http://www.flickr.com/photos/airandspace")
+                      img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_fr.gif", alt="Flickr")
+                    a(href="http://www.youtube.com/airandspace")
+                      img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_yt.gif", alt="Youtube")
+                    a(href="http://pinterest.com/airandspace/")
+                      img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_pin.gif", alt="Pinterest")
+                    br
+                    br
+                    div(style="padding-top:4px;")
+                      a(href="https://plus.google.com/b/101098533768380152342/+airandspace/posts")
+                        img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_gp.gif", alt="Google+")
+                      a(href="http://instagram.com/airandspacemuseum")
+                        img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_in.gif", alt="Instagram")
+                      a(href="http://blog.nasm.si.edu/")
+                        img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_blog.gif", alt="Blog")
+                      a(href="http://airandspace.si.edu/about/newsroom/e-newsletter.cfm")
+                        img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_enews.gif", alt="enewsletter")
+                      a(href="https://foursquare.com/airandspace")
+                        img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_4s.gif", alt="FourSquare")
+                      br
+                      br
+                    a(href="http://airandspace.si.edu/connect/") CONNECT
+                    | with us.
+      //if lte IE 6
+    // content begins
+    .container(style="\
+    height: 350px;\
+    ")
+      .row
+        // home slideshow
+        #myCarousel.carousel.slide.span8
+          ol.carousel-indicators
+            li(data-target="#myCarousel", data-slide-to="0")
+            li(data-target="#myCarousel", data-slide-to="1")
+            li(data-target="#myCarousel", data-slide-to="2")
+            li(data-target="#myCarousel", data-slide-to="3")
+            li.active(data-target="#myCarousel", data-slide-to="4")
+          .carousel-inner
+            .item
+              a(href="https://www.youtube.com/watch?v=vniBBT7nRJg", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 1']);")
+                img(src="./Smithsonian's National Air and Space Museum Home Page_files/flash-mob2.jpg", title="Story 1")
+              .container
+                .carousel-caption.carousel-home
+                  h2
+                    a(href="https://www.youtube.com/watch?v=vniBBT7nRJg") A Festive Flash Mob
+                  p
+                    | Watch the US Air Force Band surprise visitors with some holiday cheer at the Museum in VA.
+            .item
+              a(href="http://airandspace.si.edu/collections/artifact.cfm?object=nasm_A20080394000", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 2']);")
+                img(src="./Smithsonian's National Air and Space Museum Home Page_files/new-horizons.jpg", title="Story 2")
+              .container
+                .carousel-caption.carousel-home
+                  h2
+                    a(href="http://airandspace.si.edu/collections/artifact.cfm?object=nasm_A20080394000") New Horizons Mission
+                  p
+                    | This Pluto-bound spacecraft may be 2.9 billion miles from Earth,
+                    br
+                    | but you can see a mock-up at the Museum in Virginia.
+            .item
+              a(href="http://airandspace.si.edu/support/ways-to-give/gift-ideas.cfm", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 3']);")
+                img(src="./Smithsonian's National Air and Space Museum Home Page_files/gift-ideas.jpg", title="Story 3")
+              .container
+                .carousel-caption.carousel-home
+                  h2
+                    a(href="http://airandspace.si.edu/support/ways-to-give/gift-ideas.cfm") "Tis the Season
+                  p Find the perfect gift for your aerospace enthusiast.
+            .item
+              a(href="https://itunes.apple.com/us/app/pilot-pals/id920173926?ls=1&mt=8", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 4']);")
+                img(src="./Smithsonian's National Air and Space Museum Home Page_files/pilot-pals.jpg", title="Story 4")
+              .container
+                .carousel-caption.carousel-home
+                  h2
+                    a(href="https://itunes.apple.com/us/app/pilot-pals/id920173926?ls=1&mt=8") Pilot Pals
+                  p
+                    | Put yourself in the pilot"s seat with the Museum"s first iPad app for early learners.
+            .item.active
+              a(href="http://airandspace.si.edu/events/detail.cfm?id=12520", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 5']);")
+                img(src="./Smithsonian's National Air and Space Museum Home Page_files/interstellar-banner.jpg", title="Story 5")
+              .container
+                .carousel-caption.carousel-home
+                  h2
+                    a(href="http://airandspace.si.edu/events/detail.cfm?id=12520")
+                      | Interstellar
+                  p Currently playing in our IMAX theaters
+          a.left.carousel-control(href="http://airandspace.si.edu/#myCarousel", data-slide="prev", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banner Nav', 'Banner Prev']);") &#8249;
+          a.right.carousel-control(href="http://airandspace.si.edu/#myCarousel", data-slide="next", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banner Nav', 'Banner Next']);") &#8250;
+        // end home slideshow
+        // two museum desktop
+        .span4
+          section#dc
+            a(href="http://airandspace.si.edu/visit/mall/")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/home_dc.jpg", alt="in D.C.")
+            p
+              a(href="http://airandspace.si.edu/visit/mall/")
+                b NATIONAL AIR AND SPACE MUSEUM
+                br
+                | Today"s Hours 10:00am-5:30pm
+          section#va
+            a(href="http://airandspace.si.edu/visit/udvar-hazy-center/")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/home_va.jpg", alt="in Virginia")
+            p
+              a(href="http://airandspace.si.edu/visit/udvar-hazy-center/")
+                b STEVEN F. UDVAR-HAZY CENTER
+                br
+                | Today"s Hours 10:00am-5:30pm
+    // global footer
+    footer.globalfooter
+      .container
+        .visible-phone
+          #accordion2.accordion.footer-bg
+            .accordion-group
+              .accordion-heading
+                a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="http://airandspace.si.edu/#collapseOne")
+                  | Locations
+              #collapseOne.accordion-body.collapse
+                .accordion-inner
+                  p
+                    span.footerheader
+                      a(href="http://airandspace.si.edu/visit/mall/") National &#160;Air &#160;and &#160;Space &#160;Museum
+                    a(href="http://airandspace.si.edu/visit/mall/")
+                      br
+                      | Independence Ave at 6th St, SW
+                      br
+                      | Washington, DC 20560
+                    a(href="tel:+12026332214") 202-633-2214
+                    br
+                    | Today"s Hours: 10am &#8211; 5:30pm
+                  p
+                    span.footerheader
+                      a(href="http://airandspace.si.edu/visit/udvar-hazy-center/") Steven &#160;&#160;F. &#160;Udvar-Hazy&#160;&#160;Center
+                    a(href="http://airandspace.si.edu/visit/udvar-hazy-center/")
+                      br
+                      | 14390 Air and Space Museum Parkway
+                      br
+                      | Chantilly, VA 20151
+                    br
+                    a(href="tel:+17035724118") 703-572-4118
+                    br
+                    | Today"s Hours: 10am &#8211; 5:30pm
+            .accordion-group
+              .accordion-heading
+                a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="http://airandspace.si.edu/#collapseTwo")
+                  | About Us
+              #collapseTwo.accordion-body.collapse
+                .accordion-inner
+                  p
+                    a(href="http://airandspace.si.edu/about/newsroom/") Newsroom
+                    br
+                    a(href="http://airandspace.si.edu/about/faq.cfm") FAQs
+                    br
+                    a(href="http://www.si.edu/privacy/") Privacy
+                    br
+                    a(href="http://www.si.edu/termsofuse/") Terms of Use
+                    br
+                    a(href="http://airandspace.si.edu/about/contact.cfm") Contact Us
+                    br
+                    a(href="http://www.si.edu/", target="_blank") Smithsonian Institution
+                    br
+                    a(href="http://blog.nasm.si.edu/") Blog
+                    br
+                    a(href="http://airandspace.si.edu/visit/mall/museum-store.cfm") Shop
+                    br
+                    a(href="http://www.ustream.tv/channel/smithsonian-national-air-and-space-museum") Ustream
+                    br
+                    a(href="http://m.nasm.si.edu/") Mobile
+                    br
+                    a(href="http://airandspace.si.edu/about/newsroom/e-newsletter.cfm") E-Newsletter
+            .accordion-group
+              .accordion-heading
+                a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="http://airandspace.si.edu/#collapseThree")
+                  | Get Involved
+              #collapseThree.accordion-body.collapse
+                .accordion-inner
+                  p
+                    a(href="https://airandspace.si.edu/support/donate/") Donate
+                    br
+                    a(href="http://airandspace.si.edu/support/membership/") Membership
+                    br
+                    a(href="http://www.sihr.si.edu/", target="_blank") Jobs
+                    br
+                    a(href="http://airandspace.si.edu/explore-and-learn/get-involved/", target="_blank") Student Jobs
+                    br
+                    a(href="http://airandspace.si.edu/support/volunteer/internships.cfm") Internships
+                    br
+                    a(href="http://airandspace.si.edu/research/fellowships/") Fellowships
+                    br
+                    a(href="http://airandspace.si.edu/support/volunteer/") Volunteer
+          p
+            | Connect with us:
+            br
+            a(href="https://www.facebook.com/airandspace")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_fb.gif", alt="facebook")
+            a(href="https://twitter.com/airandspace")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_tw.gif", alt="Twitter")
+            a(href="http://www.flickr.com/photos/airandspace")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_fr.gif", alt="Flickr")
+            a(href="http://www.youtube.com/airandspace")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_yt.gif", alt="YouTube")
+            a(href="http://instagram.com/airandspacemuseum/")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_in.gif", alt="Instagram")
+            a(href="http://blog.nasm.si.edu/")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_blog.gif", alt="Blog")
+            a(href="https://plus.google.com/+airandspace/posts")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_gp.gif", alt="google plus")
+            a(href="http://pinterest.com/airandspace/")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_pin.gif", alt="pinterest")
+            a(href="https://foursquare.com/airandspace")
+              img(src="./Smithsonian's National Air and Space Museum Home Page_files/social_4s.gif", alt="foursqure feed")
+          p
+            a(href="http://airandspace.si.edu/visit/families.cfm") Families&#160; |
+            a(href="http://airandspace.si.edu/visit/educators.cfm") Educators
+        .row.hidden-phone
+          .span5
+            p
+              span.footerheader
+                a(href="http://airandspace.si.edu/visit/mall/") National &#160;&#160;Air &#160;&#160;and &#160;&#160;Space &#160;&#160;Museum
+              a(href="http://airandspace.si.edu/visit/mall/")
+                br
+                | Independence Ave at 6th St, SW
+                br
+                | Washington, DC 20560
+              br
+              a(href="tel:+12026332214") 202-633-2214
+              br
+              | Today"s Hours: 10am &#8211; 5:30pm
+            p
+              span.footerheader
+                a(href="http://airandspace.si.edu/visit/udvar-hazy-center/") Steven &#160;&#160;F. &#160;Udvar-Hazy&#160;&#160;Center
+              a(href="http://airandspace.si.edu/visit/udvar-hazy-center/")
+                br
+                | 14390 Air and Space Museum Parkway
+                br
+                | Chantilly VA 20151
+              br
+              a(href="tel:+17035724118") 703-572-4118
+              br
+              | Today"s Hours: 10am &#8211; 5:30pm
+          .span7
+            .row
+              .span2
+                p
+                  a(href="http://airandspace.si.edu/about/newsroom/") Newsroom
+                  br
+                  a(href="http://airandspace.si.edu/about/faq.cfm") FAQs
+                  br
+                  a(href="http://www.si.edu/privacy/") Privacy
+                  br
+                  a(href="http://www.si.edu/termsofuse/") Terms of Use
+                  br
+                  a(href="http://airandspace.si.edu/about/contact.cfm") Contact Us
+                  br
+                  a(href="http://www.si.edu/", target="_blank") Smithsonian Institution
+              .span2
+                p
+                  a(href="https://airandspace.si.edu/support/donate/") Donate
+                  br
+                  a(href="http://airandspace.si.edu/support/membership/") Membership
+                  br
+                  a(href="http://www.sihr.si.edu/", target="_blank") Jobs
+                  br
+                  a(href="http://airandspace.si.edu/explore-and-learn/get-involved/", target="_blank") Student Jobs
+                  br
+                  a(href="http://airandspace.si.edu/support/volunteer/internships.cfm") Internships
+                  br
+                  a(href="http://airandspace.si.edu/research/fellowships/") Fellowships
+                  br
+                  a(href="http://airandspace.si.edu/support/volunteer/") Volunteer
+              .span3 
+                p
+                  a(href="http://blog.nasm.si.edu/") Blog
+                  br
+                  a(href="http://airandspace.si.edu/visit/mall/museum-store.cfm") Shop
+                  br
+                  a(href="http://www.ustream.tv/channel/smithsonian-national-air-and-space-museum") Ustream
+                  br
+                  a(href="http://m.nasm.si.edu/") Mobile
+                  br
+                  a(href="http://airandspace.si.edu/about/newsroom/e-newsletter.cfm") E-Newsletter
+                  br
+                  a(href="http://airandspace.si.edu/visit/families.cfm") Families
+                  br
+                  a(href="http://airandspace.si.edu/visit/educators.cfm") Educators
+    footer.taglinefooter
+      .container.tagline
+        p
+          | A gift to the National Air and Space Museum is a gift to the nation, the world, and the future.
+          a(href="http://airandspace.si.edu/support") Support the Campaign.
