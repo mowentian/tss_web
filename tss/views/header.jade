@@ -1,0 +1,22 @@
+header.jumbotron
+  .container
+    .row
+      .span7.logomargin.hidden-phone
+        a(href="/")
+          img(src="/images/nasm_logo2.png")
+      .span7.logomargin.visible-phone
+        a(href="/")
+          img(src="/images/nasm_logo_mobile.png")
+      .span3.visible-desktop.btnmargin
+        a.btn.btn-small.btn-primary(style="margin-left:25px;", href="/download")
+          span.white.bold DOWNLOAD
+      .span3.visible-tablet.btnmargin
+        a.btn.btn-mini.btn-primary(href="/download")
+          span.white.bold DOWNLOAD
+      .span2(style="margin-top:32px;")
+        .input-append.hidden-phone(style="margin-bottom:-20px;")
+          form(name="headersearch", action="http://www.baidu.com/baidu" target="_blank")
+            input(name="tn" type="hidden" value = "baidu")
+            input#appendedInputButton.input-small(type="text", name="word")
+            button.btn.btn-warning(type="submit" value="百度搜索")
+              img(src="/images/maglass.png", alt="Search")
