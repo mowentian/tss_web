@@ -1,0 +1,58 @@
+// home slideshow
+#myCarousel.carousel.slide.span8
+  ol.carousel-indicators
+    li(data-target="#myCarousel", data-slide-to="0")
+    li(data-target="#myCarousel", data-slide-to="1")
+    li(data-target="#myCarousel", data-slide-to="2")
+    li(data-target="#myCarousel", data-slide-to="3")
+    li.active(data-target="#myCarousel", data-slide-to="4")
+  .carousel-inner
+    .item
+      a(href="https://www.youtube.com/watch?v=vniBBT7nRJg", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 1']);")
+        img(src="./Smithsonian's National Air and Space Museum Home Page_files/flash-mob2.jpg", title="Story 1")
+      .container
+        .carousel-caption.carousel-home
+          h2
+            a(href="https://www.youtube.com/watch?v=vniBBT7nRJg") A Festive Flash Mob
+          p
+            | Watch the US Air Force Band surprise visitors with some holiday cheer at the Museum in VA.
+    .item
+      a(href="http://airandspace.si.edu/collections/artifact.cfm?object=nasm_A20080394000", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 2']);")
+        img(src="./Smithsonian's National Air and Space Museum Home Page_files/new-horizons.jpg", title="Story 2")
+      .container
+        .carousel-caption.carousel-home
+          h2
+            a(href="http://airandspace.si.edu/collections/artifact.cfm?object=nasm_A20080394000") New Horizons Mission
+          p
+            | This Pluto-bound spacecraft may be 2.9 billion miles from Earth,
+            br
+            | but you can see a mock-up at the Museum in Virginia.
+    .item
+      a(href="http://airandspace.si.edu/support/ways-to-give/gift-ideas.cfm", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 3']);")
+        img(src="./Smithsonian's National Air and Space Museum Home Page_files/gift-ideas.jpg", title="Story 3")
+      .container
+        .carousel-caption.carousel-home
+          h2
+            a(href="http://airandspace.si.edu/support/ways-to-give/gift-ideas.cfm") "Tis the Season
+          p Find the perfect gift for your aerospace enthusiast.
+    .item
+      a(href="https://itunes.apple.com/us/app/pilot-pals/id920173926?ls=1&mt=8", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 4']);")
+        img(src="./Smithsonian's National Air and Space Museum Home Page_files/pilot-pals.jpg", title="Story 4")
+      .container
+        .carousel-caption.carousel-home
+          h2
+            a(href="https://itunes.apple.com/us/app/pilot-pals/id920173926?ls=1&mt=8") Pilot Pals
+          p
+            | Put yourself in the pilot"s seat with the Museum"s first iPad app for early learners.
+    .item.active
+      a(href="http://airandspace.si.edu/events/detail.cfm?id=12520", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banners', 'Banner 5']);")
+        img(src="./Smithsonian's National Air and Space Museum Home Page_files/interstellar-banner.jpg", title="Story 5")
+      .container
+        .carousel-caption.carousel-home
+          h2
+            a(href="http://airandspace.si.edu/events/detail.cfm?id=12520")
+              | Interstellar
+          p Currently playing in our IMAX theaters
+  a.left.carousel-control(href="http://airandspace.si.edu/#myCarousel", data-slide="prev", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banner Nav', 'Banner Prev']);") &#8249;
+  a.right.carousel-control(href="http://airandspace.si.edu/#myCarousel", data-slide="next", onclick="_gaq.push(['_trackEvent', 'Homepage Clicks', 'Home Banner Nav', 'Banner Next']);") &#8250;
+// end home slideshow
