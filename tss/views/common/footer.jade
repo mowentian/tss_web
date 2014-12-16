@@ -26,6 +26,7 @@ mixin ahrefs(hrefs)
     +ahref(href, name)
       
 mixin left_info
+
   +ahrefs({
     'http://airandspace.si.edu/about/newsroom/': 'Newsroom',
     'http://airandspace.si.edu/about/faq.cfm': 'FAQs',
@@ -36,6 +37,7 @@ mixin left_info
   })
 
 mixin center_info
+
   +ahrefs({
     'https://airandspace.si.edu/support/donate/': 'Donate',
     'http://airandspace.si.edu/support/membership/': 'Membership',
@@ -47,6 +49,7 @@ mixin center_info
   })
 
 mixin right_info
+
   +ahrefs({
     'http://blog.nasm.si.edu/': 'Blog',
     'http://airandspace.si.edu/visit/mall/museum-store.cfm': 'Shop',
@@ -60,7 +63,6 @@ mixin right_info
 mixin accordion_heading(href, head)
   .accordion-heading
     a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href=href)
-      |
       =head
 
 footer.globalfooter
@@ -77,24 +79,30 @@ footer.globalfooter
             .accordion-inner
               p
                 +left_info
+                
                 +right_info
+                
         .accordion-group
           +accordion_heading('http://airandspace.si.edu/#collapseThree', '加入我们')
           #collapseThree.accordion-body.collapse
             .accordion-inner
               p
                 +center_info
+                
     .row.hidden-phone
       .span5
         +company_info
+        
       .span7
         .row
           .span2
             p
               +left_info
+              
           .span2
             p
               +center_info
+              
           .span3 
             p
               +right_info
