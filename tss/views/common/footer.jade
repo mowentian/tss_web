@@ -1,160 +1,106 @@
+mixin href_info(des, href, detail)
+  br
+  =des
+  a(href=href)=detail
+
+mixin company_info
+  p
+    span.footerheader
+      br
+      a(href="/about") 杭州投胜信息技术有限公司
+    a(href="/about")
+      br
+      | 杭州市滨江区江陵路601号
+      br
+      | 东方商务会馆725室
+    a(href="tel:+86-0571-88158278") 0571-88158278
+    +href_info('邮箱：', 'mailto:admin@tss.net.cn', 'admin@tss.net.cn')
+    +href_info('网址：', 'www.tss.net.cn', 'www.tss.net.cn')
+
+mixin ahref(href, name)
+  a(href=href)=name
+  br
+
+mixin ahrefs(hrefs)
+  each name, href in hrefs
+    +ahref(href, name)
+      
+mixin left_info
+  +ahrefs({
+    'http://airandspace.si.edu/about/newsroom/': 'Newsroom',
+    'http://airandspace.si.edu/about/faq.cfm': 'FAQs',
+    'http://www.si.edu/privacy/': 'Privacy',
+    'http://www.si.edu/termsofuse/': 'Terms of Use',
+    'http://airandspace.si.edu/about/contact.cfm': 'Contact Us',
+    'http://www.si.edu/': 'Smithsonian Institution'
+  })
+
+mixin center_info
+  +ahrefs({
+    'https://airandspace.si.edu/support/donate/': 'Donate',
+    'http://airandspace.si.edu/support/membership/': 'Membership',
+    'http://www.sihr.si.edu/': 'Jobs',
+    'http://airandspace.si.edu/explore-and-learn/get-involved/': 'Student Jobs',
+    'http://airandspace.si.edu/support/volunteer/internships.cfm': 'Internships',
+    'http://airandspace.si.edu/research/fellowships/': 'Fellowships',
+    'http://airandspace.si.edu/support/volunteer/': 'Volunteer'
+  })
+
+mixin right_info
+  +ahrefs({
+    'http://blog.nasm.si.edu/': 'Blog',
+    'http://airandspace.si.edu/visit/mall/museum-store.cfm': 'Shop',
+    'http://www.ustream.tv/channel/smithsonian-national-air-and-space-museum': 'Ustream',
+    'http://m.nasm.si.edu/': 'Mobile',
+    'http://airandspace.si.edu/about/newsroom/e-newsletter.cfm': 'E-Newsletter',
+    'http://airandspace.si.edu/visit/families.cfm': 'Families',
+    'http://airandspace.si.edu/visit/educators.cfm': 'Educators'
+  })
+
+mixin accordion_heading(href, head)
+  .accordion-heading
+    a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href=href)
+      |
+      =head
+
 footer.globalfooter
   .container
     .visible-phone
       #accordion2.accordion.footer-bg
         .accordion-group
-          .accordion-heading
-            a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="http://airandspace.si.edu/#collapseOne")
-              | Locations
+          +accordion_heading('http://airandspace.si.edu/#collapseOne', '公司地址')
           #collapseOne.accordion-body.collapse
             .accordion-inner
-              p
-                span.footerheader
-                  a(href="http://airandspace.si.edu/visit/mall/") National &#160;Air &#160;and &#160;Space &#160;Museum
-                a(href="http://airandspace.si.edu/visit/mall/")
-                  br
-                  | Independence Ave at 6th St, SW
-                  br
-                  | Washington, DC 20560
-                a(href="tel:+12026332214") 202-633-2214
-                br
-                | Today"s Hours: 10am &#8211; 5:30pm
-              p
-                span.footerheader
-                  a(href="http://airandspace.si.edu/visit/udvar-hazy-center/") Steven &#160;&#160;F. &#160;Udvar-Hazy&#160;&#160;Center
-                a(href="http://airandspace.si.edu/visit/udvar-hazy-center/")
-                  br
-                  | 14390 Air and Space Museum Parkway
-                  br
-                  | Chantilly, VA 20151
-                br
-                a(href="tel:+17035724118") 703-572-4118
-                br
-                | Today"s Hours: 10am &#8211; 5:30pm
-        .accordion-group
-          .accordion-heading
-            a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="http://airandspace.si.edu/#collapseTwo")
-              | About Us
+            　+company_info
+          +accordion_heading('http://airandspace.si.edu/#collapseOne', '关于我们')
           #collapseTwo.accordion-body.collapse
             .accordion-inner
               p
-                a(href="http://airandspace.si.edu/about/newsroom/") Newsroom
-                br
-                a(href="http://airandspace.si.edu/about/faq.cfm") FAQs
-                br
-                a(href="http://www.si.edu/privacy/") Privacy
-                br
-                a(href="http://www.si.edu/termsofuse/") Terms of Use
-                br
-                a(href="http://airandspace.si.edu/about/contact.cfm") Contact Us
-                br
-                a(href="http://www.si.edu/", target="_blank") Smithsonian Institution
-                br
-                a(href="http://blog.nasm.si.edu/") Blog
-                br
-                a(href="http://airandspace.si.edu/visit/mall/museum-store.cfm") Shop
-                br
-                a(href="http://www.ustream.tv/channel/smithsonian-national-air-and-space-museum") Ustream
-                br
-                a(href="http://m.nasm.si.edu/") Mobile
-                br
-                a(href="http://airandspace.si.edu/about/newsroom/e-newsletter.cfm") E-Newsletter
+                +left_info
+                +right_info
         .accordion-group
-          .accordion-heading
-            a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="http://airandspace.si.edu/#collapseThree")
-              | Get Involved
+          +accordion_heading('http://airandspace.si.edu/#collapseThree', '加入我们')
           #collapseThree.accordion-body.collapse
             .accordion-inner
               p
-                a(href="https://airandspace.si.edu/support/donate/") Donate
-                br
-                a(href="http://airandspace.si.edu/support/membership/") Membership
-                br
-                a(href="http://www.sihr.si.edu/", target="_blank") Jobs
-                br
-                a(href="http://airandspace.si.edu/explore-and-learn/get-involved/", target="_blank") Student Jobs
-                br
-                a(href="http://airandspace.si.edu/support/volunteer/internships.cfm") Internships
-                br
-                a(href="http://airandspace.si.edu/research/fellowships/") Fellowships
-                br
-                a(href="http://airandspace.si.edu/support/volunteer/") Volunteer
-      p
-        a(href="http://airandspace.si.edu/visit/families.cfm") Families&#160; |
-        a(href="http://airandspace.si.edu/visit/educators.cfm") Educators
+                +center_info
     .row.hidden-phone
       .span5
-        p
-          span.footerheader
-            a(href="http://airandspace.si.edu/visit/mall/") National &#160;&#160;Air &#160;&#160;and &#160;&#160;Space &#160;&#160;Museum
-          a(href="http://airandspace.si.edu/visit/mall/")
-            br
-            | Independence Ave at 6th St, SW
-            br
-            | Washington, DC 20560
-          br
-          a(href="tel:+12026332214") 202-633-2214
-          br
-          | Today"s Hours: 10am &#8211; 5:30pm
-        p
-          span.footerheader
-            a(href="http://airandspace.si.edu/visit/udvar-hazy-center/") Steven &#160;&#160;F. &#160;Udvar-Hazy&#160;&#160;Center
-          a(href="http://airandspace.si.edu/visit/udvar-hazy-center/")
-            br
-            | 14390 Air and Space Museum Parkway
-            br
-            | Chantilly VA 20151
-          br
-          a(href="tel:+17035724118") 703-572-4118
-          br
-          | Today"s Hours: 10am &#8211; 5:30pm
+        +company_info
       .span7
         .row
           .span2
             p
-              a(href="http://airandspace.si.edu/about/newsroom/") Newsroom
-              br
-              a(href="http://airandspace.si.edu/about/faq.cfm") FAQs
-              br
-              a(href="http://www.si.edu/privacy/") Privacy
-              br
-              a(href="http://www.si.edu/termsofuse/") Terms of Use
-              br
-              a(href="http://airandspace.si.edu/about/contact.cfm") Contact Us
-              br
-              a(href="http://www.si.edu/", target="_blank") Smithsonian Institution
+              +left_info
           .span2
             p
-              a(href="https://airandspace.si.edu/support/donate/") Donate
-              br
-              a(href="http://airandspace.si.edu/support/membership/") Membership
-              br
-              a(href="http://www.sihr.si.edu/", target="_blank") Jobs
-              br
-              a(href="http://airandspace.si.edu/explore-and-learn/get-involved/", target="_blank") Student Jobs
-              br
-              a(href="http://airandspace.si.edu/support/volunteer/internships.cfm") Internships
-              br
-              a(href="http://airandspace.si.edu/research/fellowships/") Fellowships
-              br
-              a(href="http://airandspace.si.edu/support/volunteer/") Volunteer
+              +center_info
           .span3 
             p
-              a(href="http://blog.nasm.si.edu/") Blog
-              br
-              a(href="http://airandspace.si.edu/visit/mall/museum-store.cfm") Shop
-              br
-              a(href="http://www.ustream.tv/channel/smithsonian-national-air-and-space-museum") Ustream
-              br
-              a(href="http://m.nasm.si.edu/") Mobile
-              br
-              a(href="http://airandspace.si.edu/about/newsroom/e-newsletter.cfm") E-Newsletter
-              br
-              a(href="http://airandspace.si.edu/visit/families.cfm") Families
-              br
-              a(href="http://airandspace.si.edu/visit/educators.cfm") Educators
+              +right_info
+
 footer.taglinefooter
   .container.tagline
     p
-      | TSS Home Page.
+      | TSS Home Page.  
       a(href="/content") Content Us.

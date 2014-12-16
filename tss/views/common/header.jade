@@ -1,12 +1,14 @@
+mixin aimg(href, src)
+  a(href=href)
+    img(src=src)
+
 header.jumbotron
   .container
     .row
       .span7.logomargin.hidden-phone
-        a(href="/")
-          img(src="/images/nasm_logo2.png")
+        +aimg('/', '/images/nasm_logo2.png')
       .span7.logomargin.visible-phone
-        a(href="/")
-          img(src="/images/nasm_logo_mobile.png")
+        +aimg('/', '/images/nasm_logo_mobile.png')
       .span3.visible-desktop.btnmargin
         a.btn.btn-small.btn-primary(style="margin-left:25px;", href="/download")
           span.white.bold DOWNLOAD
