@@ -1,0 +1,12 @@
+.span4
+  mixin section(id, href, img, name)
+    section(id=id)
+      a(href=href)
+        img(src=img, alt=name)
+      p
+        a(href=href)
+          b= name
+          br
+          | 
+  +section('dc', '/solution', '/images/home_dc.jpg', '解决方案')
+  +section('va', '/about', '/images/home_va.jpg', '关于我们')

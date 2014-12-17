@@ -1,0 +1,114 @@
+mixin href_info(des, href, detail)
+  br
+  =des
+  a(href=href)=detail
+
+mixin company_info
+  p
+    span.footerheader
+      br
+      a(href="/about") 杭州投胜信息技术有限公司
+    a(href="/about")
+      br
+      | 杭州市滨江区江陵路601号
+      br
+      | 东方商务会馆725室
+    a(href="tel:+86-0571-88158278") 0571-88158278
+    +href_info('邮箱：', 'mailto:admin@tss.net.cn', 'admin@tss.net.cn')
+    +href_info('网址：', 'www.tss.net.cn', 'www.tss.net.cn')
+
+mixin ahref(href, name)
+  a(href=href)=name
+  br
+
+mixin ahrefs(hrefs)
+  each name, href in hrefs
+    +ahref(href, name)
+      
+mixin left_info
+
+  +ahrefs({
+    'http://airandspace.si.edu/about/newsroom/': 'Newsroom',
+    'http://airandspace.si.edu/about/faq.cfm': 'FAQs',
+    'http://www.si.edu/privacy/': 'Privacy',
+    'http://www.si.edu/termsofuse/': 'Terms of Use',
+    'http://airandspace.si.edu/about/contact.cfm': 'Contact Us',
+    'http://www.si.edu/': 'Smithsonian Institution'
+  })
+
+mixin center_info
+
+  +ahrefs({
+    'https://airandspace.si.edu/support/donate/': 'Donate',
+    'http://airandspace.si.edu/support/membership/': 'Membership',
+    'http://www.sihr.si.edu/': 'Jobs',
+    'http://airandspace.si.edu/explore-and-learn/get-involved/': 'Student Jobs',
+    'http://airandspace.si.edu/support/volunteer/internships.cfm': 'Internships',
+    'http://airandspace.si.edu/research/fellowships/': 'Fellowships',
+    'http://airandspace.si.edu/support/volunteer/': 'Volunteer'
+  })
+
+mixin right_info
+
+  +ahrefs({
+    'http://blog.nasm.si.edu/': 'Blog',
+    'http://airandspace.si.edu/visit/mall/museum-store.cfm': 'Shop',
+    'http://www.ustream.tv/channel/smithsonian-national-air-and-space-museum': 'Ustream',
+    'http://m.nasm.si.edu/': 'Mobile',
+    'http://airandspace.si.edu/about/newsroom/e-newsletter.cfm': 'E-Newsletter',
+    'http://airandspace.si.edu/visit/families.cfm': 'Families',
+    'http://airandspace.si.edu/visit/educators.cfm': 'Educators'
+  })
+
+mixin accordion_heading(href, head)
+  .accordion-heading
+    a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href=href)
+      =head
+
+footer.globalfooter
+  .container
+    .visible-phone
+      #accordion2.accordion.footer-bg
+        .accordion-group
+          +accordion_heading('http://airandspace.si.edu/#collapseOne', '公司地址')
+          #collapseOne.accordion-body.collapse
+            .accordion-inner
+            　+company_info
+          +accordion_heading('http://airandspace.si.edu/#collapseOne', '关于我们')
+          #collapseTwo.accordion-body.collapse
+            .accordion-inner
+              p
+                +left_info
+                
+                +right_info
+                
+        .accordion-group
+          +accordion_heading('http://airandspace.si.edu/#collapseThree', '加入我们')
+          #collapseThree.accordion-body.collapse
+            .accordion-inner
+              p
+                +center_info
+                
+    .row.hidden-phone
+      .span5
+        +company_info
+        
+      .span7
+        .row
+          .span2
+            p
+              +left_info
+              
+          .span2
+            p
+              +center_info
+              
+          .span3 
+            p
+              +right_info
+
+footer.taglinefooter
+  .container.tagline
+    p
+      | TSS Home Page.  
+      a(href="/content") Content Us.
