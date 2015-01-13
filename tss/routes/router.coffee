@@ -9,3 +9,6 @@ router.get '/layout', (req, res) ->
 
 router.get '/smith', (req, res) ->
   res.render 'smith_index'
+
+router.get '/partners', (req, res)->
+  res.render 'partners/partners'
