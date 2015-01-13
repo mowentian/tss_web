@@ -1,17 +1,11 @@
 doctype html
 html.js.flexbox.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths(style="height: 100%;")
   head
-    include common/head.jade
-  body(style="position: relative; min-height: 100%; top: 0px;")
-    include common/header.jade
+    include ../common/head.jade
+  body
+    include ../common/header.jade
     // dropdown navigation responsive nav
-    include common/menu.jade
-    // content begins
-    .container(style="height: 350px;")
-      .row
-        //- home slideshow
-        include index/homeslideshow.jade
-        //- right two section 
-        include index/homeright2section.jade
+    include ../common/menu.jade
+    include partners_content.jade
     // global footer
-    include common/footer.jade
+    include ../common/footer.jade

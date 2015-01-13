@@ -1,0 +1,65 @@
+mixin data(href, img, name, des)
+  article.row
+    .span3
+      p
+      figure
+        a(href=href)
+          img(border='0', src=img, width='220')
+      p
+    .span7
+      p
+        b
+          a(href=href)=name
+      p
+        =des
+            
+.container
+  .row
+    .span10.pull-right
+      img(src='/images/collection.jpg', alt='')
+      .row
+        // subpage main section
+        section.span10
+          h1 战略合作
+          hr
+          .row
+            .span10
+              a(name='groups')
+              +data('http://www.zxfirewall.com/', '/images/zxrj.png', '中新软件', '安徽中新软件有限公司（简称“中新软件”）是集网络安全产品、软硬件开发的高科技公司。作为在国内最早具有自主研发实力的企业，中新软件在解决国内抗拒绝服务攻击技术层面至今一直处于领先地位。公司针对DDOS攻击的产品自主研发、生产的金盾系列安全产品包括金盾防火墙、金盾抗拒绝服务系统、流量牵引设备、信息过滤系统。自创立至今一直在市场上获得良好坚实的口碑，在行业内处于领先地位，于2009年组织和起草了“安徽省互联网抗拒绝服务系统地方标准”并发布；2010年参与起草和制定了国家公安部互联网信息安全产品生产和检查相关行业标准。')
+              +data('http://www.topsec.com.cn', '/images/trx.png', '天融信安全服务专家', '北京天融信科技股份有限公司（简称天融信），天融信是中国领先的信息安全产品与服务解决方案提供商。基于创新的 “可信网络架构”以及业界领先的信息安全产品与服务，天融信致力于改善用户网络与应用的可视性、可用性、可控性和安全性，降低安全风险，创造业务价值。')
+              +data('http://www.cisco.com/', '/images/cisco.jpg', '思科','思科公司是全球领先的网络解决方案供应商。依靠自身的技术和对网络经济模式的深刻理解，思科成为了网络应用的成功实践者之一。与此同时思科正在致力于为无数的企业构筑网络间畅通无阻的“桥梁”，并用自己敏锐的洞察力、丰富的行业经验、先进的技术，帮助企业把网络应用转化为战略性的资产，充分挖掘网络的能量，获得竞争的优势。')
+              +data('http://www.h3c.com.cn/', '/images/hs.png', '杭州华三通信技术有限公司', '杭州华三通信技术有限公司（简称华三通信），根植中国，华三通信始终以“为客户创造价值”作为公司发展的源动力，不断细分客户需求。到2013年底，华三通信已服务于70%以上的中央部委、“十二金工程”中的九个全国骨干网，四大国有商业银行，500强企业中的400家。')
+        // end subpage main section
+    // side navigation
+    .span2
+      nav.sidenav.block
+        #block-nasm-primary-links
+          ul.menu
+            li.collapsed
+              a(href='http://airandspace.si.edu/about') About
+            li.collapsed
+              a(href='http://airandspace.si.edu/visit') Visit
+            li.collapsed
+              a(href='http://airandspace.si.edu/events') Events
+            li.collapsed
+              a(href='http://airandspace.si.edu/exhibitions') Exhibitions
+            li.expanded
+              a(href='http://airandspace.si.edu/collections') 战略合作
+              ul.menu
+                li.collapsed
+                  a(href='http://airandspace.si.edu/collections/about.cfm') 中新软件
+                li.collapsed
+                  a(href='http://airandspace.si.edu/collections/objects.cfm') 天融信
+                li.collapsed
+                  a(href='http://airandspace.si.edu/collections/archival/') 思科
+                li.collapsed
+                  a(href='http://airandspace.si.edu/explore-and-learn/multimedia/') 华三
+            li.collapsed
+              a(href='http://airandspace.si.edu/research') Research
+            li.collapsed
+              a(href='http://airandspace.si.edu/support') Support
+            li.collapsed
+              a(href='http://airandspace.si.edu/explore-and-learn') Explore & Learn
+            li.collapsed
+              a(href='http://airandspace.si.edu/connect') Connect
+          // prodfile-
